@@ -37,3 +37,66 @@ h1 {
 #theme-toggle:hover {
   opacity: 0.9;
 }
+
+/* Contact Form Styling */
+#contact-form-section {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode #contact-form-section {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#contact-form-section h2 {
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+#contact-form-section form div {
+  margin-bottom: 15px;
+}
+
+#contact-form-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contact-form-section input[type="text"],
+#contact-form-section input[type="email"],
+#contact-form-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#contact-form-section input[type="text"]:focus,
+#contact-form-section input[type="email"]:focus,
+#contact-form-section textarea:focus {
+  border-color: #007bff; /* Highlight focus with a distinct color */
+  outline: none;
+}
+
+#contact-form-section button[type="submit"] {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contact-form-section button[type="submit"]:hover {
+  opacity: 0.9;
+}
