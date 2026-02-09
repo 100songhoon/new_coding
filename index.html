@@ -5,11 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hello World</title>
   <link href='/style.css' rel='stylesheet'>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
 </head>
 <body>
   <h1>Hello, world!</h1>
   <button id="theme-toggle">Toggle Theme</button>
-  <button onclick="console.log('hello');">Press me</button>
+
+  <section id="teachable-machine-section">
+    <h2>Pet Face Test</h2>
+    <div>Teachable Machine Image Model</div>
+    <button type="button" onclick="init()">Start</button>
+    <div id="webcam-container"></div>
+    <div id="label-container"></div>
+  </section>
 
   <section id="contact-form-section">
     <h2>Partnership Inquiry</h2>
