@@ -36,3 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
 if (themeToggle) {
   themeToggle.addEventListener('click', toggleTheme);
 }
+
+// Disqus Configuration
+(function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://newcoding.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
